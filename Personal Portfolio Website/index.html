@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <title>Personal Portfolio Website</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
     </head>
-    <nav>
+    <div class="grid-container">
+    <nav class="navbar">
         <ul>
-            <li>ABOUT ME</li>
-            <li>PROJECTS</li>
-            <li>SKILLS</li>
-            <li>CONTACT</li>
+            <li><a id="about">ABOUT ME</a></li>
+            <li><a id="projects">PROJECTS</a></li>
+            <li><a id="skills">SKILLS</a></li>
+            <li><a id="contact">CONTACT</a></li>
         </ul>
     </nav>
-    <header>
+    <header class="header">
         <h1>Sidney Russell</h1>
         <h2>PERSONAL PORTFOLIO</h2>
     </header>
     <body>
-        <h3>ABOUT ME</h3>
-            <p>Born and raised on the west coast, my parents raised my in the family photography business. From a young
+        <div class="aboutme">
+            <h3 id="about">ABOUT ME</h3>
+                <p>Born and raised on the west coast, my parents raised my in the family photography business. From a young
                 age I knew the ins and outs of how an office worked. Wanting to be successful much like them I decided to become
                 an entrepreneur and began a career in the beauty industry straight out of high school. After 10 years of working
                 my dream job I became interested in learning something new and found that I loved the creativity and complexity 
@@ -28,28 +30,38 @@
                 student through Codecademy and part time student with Code First Girls. Going into this field I know that my goal
                 is to not only begin a career in the tech industry but to contribute my knowledge to help the people in this world 
                 who need it the most. I would love to find a company who works on innovative projects that make a difference. </p>
-        <h3>PROJECTS</h3>
-            <ul>
-                <li><a href="https://github.com/sidneyrussell0/Mixed-Messages.git">Mixed Messages</a></li>
-                <li><a href="https://github.com/sidneyrussell0/Flexbox-Business-Proj-.git">Flexbox Business</a></li>
-                <li><a href="https://github.com/sidneyrussell0/Number-Guesser.git">Number Guesser</a></li>
-                <li><a href="https://github.com/sidneyrussell0/The_Tea_Cozy_Project.git">The Tea Cozy</a></li>
-            </ul>
-        <img src="" alt="">
-        <img src="" alt="">
-        <h3>CODING SKILLS</h3>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Fast Learner</li>
-                <li>Time Management</li>
-            </ol>
+        </div>
+        <div class="projects">
+            <h3 id="projects">PROJECTS</h3>
+                <ul class="link">
+                    <li><a href="mixedMessages.html">Mixed Messages</a></li>
+                    <li><a href="flexboxBusiness.html">Flexbox Business</a></li>
+                    <li><a href="numberGuesser.html">Number Guesser</a></li>
+                    <li><a href="theTeaCozy.html">The Tea Cozy</a></li>
+                </ul>
+        </div>
+        <div class="photo1">
+            <img class="circle" src="Resources/full_body.jpg" alt="Sidney looking at the camera and smiling">
+        </div>
+        <div class="photo2">
+            <img class="circle" src="Resources/hair_flip.jpg" alt="Sidney flipping her hair and smiling">
+        </div>
+        <div class="skills">
+            <h3 id="skills">SKILLS</h3>
+                <ul class="skillList">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Fast Learner</li>
+                    <li>Time Management</li>
+                </ul>
+        </div>
 
     </body>
-    <footer>
-        <h3>CONTACT ME</h3>
-            <p><a href="https://github.com/sidneyrussell0">GitHub</a> | <a href="www.linkedin.com/in/sidney-russell-0445422b3">linkedIn</a></p>
+    <footer class="contactme">
+        <h3 id="contact">CONTACT ME</h3>
+            <p><a class="link" href="https://github.com/sidneyrussell0">GitHub</a> | <a class="link" href="www.linkedin.com/in/sidney-russell-0445422b3">linkedIn</a></p>
             <p>sidneyrussell58@gmail.com</p>
     </footer>
+    </div>
 </html>
